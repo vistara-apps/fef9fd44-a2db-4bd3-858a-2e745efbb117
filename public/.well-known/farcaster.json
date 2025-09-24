@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "TradeSync Social",
+    "subtitle": "Built with Zara",
+    "description": "TradeSync Social is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://fef9fd44a2db4bd3858a2e745efbb117-xstq.vercel.app",
+    "splashImageUrl": "https://fef9fd44a2db4bd3858a2e745efbb117-xstq.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://fef9fd44a2db4bd3858a2e745efbb117-xstq.vercel.app/image.png",
+    "tagline": "TradeSync Social",
+    "screenshotUrls": [
+      "https://fef9fd44a2db4bd3858a2e745efbb117-xstq.vercel.app/screenshot.png",
+      "https://fef9fd44a2db4bd3858a2e745efbb117-xstq.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://fef9fd44a2db4bd3858a2e745efbb117-xstq.vercel.app/api/webhook"
+  }
+}
