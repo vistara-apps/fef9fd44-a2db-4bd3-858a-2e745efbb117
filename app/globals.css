@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Finance Theme - Professional Wall Street meets Crypto */
+  --color-bg: #0a0e1a;
+  --color-fg: #f8fafc;
+  --color-accent: #ffd700;
+  --color-border: #1e293b;
+  --color-surface: #111827;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  
+  /* CELO Theme */
+  --celo-bg: #000000;
+  --celo-fg: #ffffff;
+  --celo-accent: #fbcc5c;
+  --celo-border: #333333;
+  --celo-surface: #111111;
+  --celo-text-primary: #ffffff;
+  --celo-text-secondary: #cccccc;
+  
+  /* SOLANA Theme */
+  --solana-bg: #1a0d2e;
+  --solana-fg: #ffffff;
+  --solana-accent: #9945ff;
+  --solana-border: #2d1b4e;
+  --solana-surface: #241447;
+  --solana-text-primary: #ffffff;
+  --solana-text-secondary: #c4b5fd;
+  
+  /* BASE Theme */
+  --base-bg: #0f172a;
+  --base-fg: #f1f5f9;
+  --base-accent: #0052ff;
+  --base-border: #334155;
+  --base-surface: #1e293b;
+  --base-text-primary: #f1f5f9;
+  --base-text-secondary: #94a3b8;
+  
+  /* COINBASE Theme */
+  --coinbase-bg: #0c1426;
+  --coinbase-fg: #f7fafc;
+  --coinbase-accent: #0052ff;
+  --coinbase-border: #2d3748;
+  --coinbase-surface: #1a202c;
+  --coinbase-text-primary: #f7fafc;
+  --coinbase-text-secondary: #a0aec0;
+}
+
+[data-theme="celo"] {
+  --color-bg: var(--celo-bg);
+  --color-fg: var(--celo-fg);
+  --color-accent: var(--celo-accent);
+  --color-border: var(--celo-border);
+  --color-surface: var(--celo-surface);
+  --color-text-primary: var(--celo-text-primary);
+  --color-text-secondary: var(--celo-text-secondary);
+}
+
+[data-theme="solana"] {
+  --color-bg: var(--solana-bg);
+  --color-fg: var(--solana-fg);
+  --color-accent: var(--solana-accent);
+  --color-border: var(--solana-border);
+  --color-surface: var(--solana-surface);
+  --color-text-primary: var(--solana-text-primary);
+  --color-text-secondary: var(--solana-text-secondary);
+}
+
+[data-theme="base"] {
+  --color-bg: var(--base-bg);
+  --color-fg: var(--base-fg);
+  --color-accent: var(--base-accent);
+  --color-border: var(--base-border);
+  --color-surface: var(--base-surface);
+  --color-text-primary: var(--base-text-primary);
+  --color-text-secondary: var(--base-text-secondary);
+}
+
+[data-theme="coinbase"] {
+  --color-bg: var(--coinbase-bg);
+  --color-fg: var(--coinbase-fg);
+  --color-accent: var(--coinbase-accent);
+  --color-border: var(--coinbase-border);
+  --color-surface: var(--coinbase-surface);
+  --color-text-primary: var(--coinbase-text-primary);
+  --color-text-secondary: var(--coinbase-text-secondary);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  
+  body {
+    background: var(--color-bg);
+    color: var(--color-text-primary);
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--color-border);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, var(--color-accent), #f59e0b);
+    color: #000;
+    font-weight: 600;
+    transition: all 0.2s cubic-bezier(0.22,1,0.36,1);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+    transition: all 0.2s cubic-bezier(0.22,1,0.36,1);
+  }
+  
+  .btn-secondary:hover {
+    background: var(--color-surface);
+    border-color: var(--color-accent);
+  }
+  
+  .trade-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.2s cubic-bezier(0.22,1,0.36,1);
+  }
+  
+  .trade-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.1);
+  }
+  
+  .metric-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 16px;
+    transition: all 0.2s cubic-bezier(0.22,1,0.36,1);
+  }
+  
+  .metric-card:hover {
+    background: rgba(17, 24, 39, 0.9);
+  }
+}
